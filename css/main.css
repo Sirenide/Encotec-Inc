@@ -12,9 +12,42 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #002240;
+	color: #054000;
 	background-color: #ffffff;
 	font-size: 16px;
+}
+
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 1.5s cubic-bezier(.25, .46, .45, .94) 1s both;
+	animation: slide-in-bck-center 1.5s cubic-bezier(.25, .46, .45, .94) 1s both
+}
+
+@-webkit-keyframes slide-in-bck-center {
+	0% {
+		-webkit-transform: translateZ(600px);
+		transform: translateZ(600px);
+		opacity: 0
+	}
+
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		opacity: 1
+	}
+}
+
+@keyframes slide-in-bck-center {
+	0% {
+		-webkit-transform: translateZ(600px);
+		transform: translateZ(600px);
+		opacity: 0
+	}
+
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		opacity: 1
+	}
 }
 
 .mobile {
