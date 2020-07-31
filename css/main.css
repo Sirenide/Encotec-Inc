@@ -1,0 +1,28 @@
+/* General */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #002240;
+	background-color: #ffffff;
+	font-size: 16px;
+}
+
+.mobile {
+	display: flex;
+}
+
+.tablet,
+.desktop,
+.menu {
+	display: none;
+}
